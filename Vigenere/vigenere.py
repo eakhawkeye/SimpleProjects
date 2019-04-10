@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/python
 # Qiuck Vigenere Ciphering with iterations
 #
 # Cipher: ( plain_text_letter.index + key_letter.index ) mod total_character_count = cipher_text_letter.index
@@ -63,8 +63,8 @@ def main():
     args = parser.parse_args()
 
     # Clean the key and message
-    clean_message = (filter(str.isalpha, args.message)).upper()
-    clean_key = (filter(str.isalpha, args.key)).upper()
+    clean_message = filter(str.isalpha, args.message).upper()
+    clean_key = filter(str.isalpha, args.key).upper()
 
     # 1=cipher -1=decipher
     cipher_op = int(-1 if args.decrypt else 1)
