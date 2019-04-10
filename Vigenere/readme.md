@@ -33,7 +33,7 @@ A little python script to encrypt and decrypt messages using the Vigenère ciphe
     output: SPECIALMESSAG
 ```
 
-###### Output: Encryption with NoNoneSense
+###### Output: Encryption with NoNonsense
 ```
 -$ vigenere.py -k secret -m 'special message' -n
 KTGTMTDQGJWTYI
