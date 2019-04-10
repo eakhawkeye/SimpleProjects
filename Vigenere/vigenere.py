@@ -77,8 +77,9 @@ def main():
         print '    output:',
 
     # Iterate through to de/cipher the message
+    i_message = clean_message
     for i in range(0, cipher_iter):
-        i_message = ''.join(cipher_message(clean_message, clean_key, cipher_op, lst_char_map, total_char))
+        i_message = ''.join(cipher_message(i_message, clean_key, cipher_op, lst_char_map, total_char))
 
     print '%s' % i_message
 

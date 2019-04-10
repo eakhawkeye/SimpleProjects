@@ -22,12 +22,12 @@ A little python script to encrypt and decrypt messages using the Vigenère ciphe
 -$ vigenere.py -k secret -m 'special message' -i 10
      input: SPECIALMESSAGE
        key: SECRET
-    output: KTGTMTDQGJWTYI
+    output: QDYQWIJAYGGIES
 ```
 
 ###### Output: Iterated Decryption (x10)
 ```
--$ vigenere.py -k secret -m KTGTMTDQGJWTYI -i 10 -d
+-$ vigenere.py -k secret -m QDYQWIJAYGGIES -i 10 -d
      input: KTGTMTDQGJWTYI
        key: SECRET
     output: SPECIALMESSAG
