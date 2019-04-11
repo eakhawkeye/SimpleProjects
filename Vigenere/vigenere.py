@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# Qiuck Vigenere Ciphering with iterations
+# Quick Vigenere Ciphering with iterations
 #
 # Cipher: ( plain_text_letter.index + key_letter.index ) mod total_character_count = cipher_text_letter.index
 # Decipher: ( cipher_text_letter.index - key_letter.index ) mod total_character_count = plain_text_letter.index
@@ -68,7 +68,7 @@ def main():
 
     # 1=cipher -1=decipher
     cipher_op = int(-1 if args.decrypt else 1)
-    cipher_iter = int(args.iterations)
+    cipher_iter = int(1 if args.iterations < 1 else args.iterations)
 
     # Prepare the output if needed
     if not args.nononsense:
